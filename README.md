@@ -1,1 +1,1 @@
-"Full design with css step 1" 
+"Landing page with css step 1" 
