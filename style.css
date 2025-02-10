@@ -75,6 +75,7 @@ li, .text-content p{
 
 /* random section */
 .random-section{
+    padding: 35px;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
@@ -109,8 +110,8 @@ li, .text-content p{
     border: 3px solid var(--bg-light-blue);
 }
 
-.box span{
-    text-align: center;
+.box-legend{
+    color: var(--bg-dark-navy);
 }
 
 .random-section .box img{
@@ -119,3 +120,23 @@ li, .text-content p{
     height: 100%;
 }
 
+/* quote section */
+.quote-section{
+    background-color: var(--tx-header-link);
+    padding: 10% 25%;
+}
+.quote-section .citation{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+}
+.quote-section .citation-author{
+    text-align: right;
+    display: block;
+    color: var(--bg-dark-navy);
+    font-weight: bold;
+    padding-top: 15px;
+    font-size: large;
+}
+
+/* cll to action */
