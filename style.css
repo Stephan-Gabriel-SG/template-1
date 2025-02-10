@@ -9,9 +9,22 @@
     --info-header:#1F2937;
 }
 
+html, body{
+    min-width: 500px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 35px;
+}
+
 .header-container{
-    padding: 30px;
+    padding: 30px 0;
     background: var(--bg-dark-navy);
+    width: 100%;
 }
 
 .header{
@@ -19,7 +32,7 @@
     margin-bottom: 10%;
 }
 
-.header, ul, .intro,.img-content, .text-content,.box-container{
+.header, ul, .intro,.img-content, .text-content,.random-section,.box-container{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -31,14 +44,19 @@
     color: var(--tx-header);
 }
 
+.nav{
+    gap: 25px;
+}
+
 li, .text-content p{
     list-style-type: none;
     font-size: 18px;
     color: var(--tx-header-link);
+    transition: .3s;
 }
 
-.text-content *{
-    margin-top: 15px;
+.intro{
+    padding: 0 50px;
 }
 
 .intro .big-title{
@@ -67,6 +85,9 @@ li, .text-content p{
     border-radius: 10px;
     background: var(--bg-light-blue);
     color: var(--tx-header);
+    transition: .3s;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .img-content img{
@@ -76,6 +97,7 @@ li, .text-content p{
 /* random section */
 .random-section{
     padding: 35px;
+    gap: 25px;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
@@ -100,6 +122,7 @@ li, .text-content p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 12px;
 }
 
 .random-section .box{
@@ -123,13 +146,14 @@ li, .text-content p{
 /* quote section */
 .quote-section{
     background-color: var(--tx-header-link);
-    padding: 10% 25%;
+    padding: 10% 20%;
 }
+
 .quote-section .citation{
     font-size: 36px;
     font-style: italic;
-    font-weight: lighter;
 }
+
 .quote-section .citation-author{
     text-align: right;
     display: block;
@@ -139,4 +163,38 @@ li, .text-content p{
     font-size: large;
 }
 
-/* cll to action */
+/* call to action */
+.call-action {
+    display: flex;
+    background: var(--bg-light-blue);
+    padding: 35px;
+    gap: 15px;
+    border-radius: 10px;
+    width: 75%;
+    color: var(--tx-header);
+    justify-content: space-around;
+    margin: 35px 0;
+}
+
+.call-action-title{
+    font-weight: bolder;
+}
+
+.call-action .btn{
+    border: 1px solid var(--tx-header);
+}
+
+footer{
+    background: var(--bg-dark-navy);
+    width: 100%;
+    color: var(--tx-header);
+    text-align: center;
+}
+footer p {
+    padding: 25px;
+}
+
+.btn:hover, li:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
